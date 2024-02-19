@@ -6,6 +6,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Linq;
 
 namespace proj2
 {
@@ -29,6 +30,8 @@ namespace proj2
                 JObject jsonObject = JObject.Parse(json);
 
                 var result = jsonObj["object1"];
+
+                System.Console.WriteLine(result.ToString().Length);
 
                 //dynamic jsonObject = Newtonsoft.Json. .Deserialize<dynamic>(json);
 
